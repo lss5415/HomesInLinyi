@@ -1,0 +1,337 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="28.5"
+    android:background="#ffffff"
+    tools:context="com.example.homesinlinyi.ShouYeActivity$PlaceholderFragment" >
+
+    <!-- 城市行 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dp"
+            android:background="@drawable/a1_biaoti"
+            android:layout_weight="2" >
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <RelativeLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="left">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff"
+                    android:text="   临沂 ^" />
+                </RelativeLayout>
+                <RelativeLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="left">
+                </RelativeLayout>
+
+                
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    
+                    android:background="#ffffff"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/a1_fenxiang" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 滚动行 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="7.5" >
+            <!-- 主题图片 -->
+    	<com.example.homesinlinyi.customview.SlideShowView
+        	android:id="@+id/slideshowView"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <!-- 九宫格 -->
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dp"
+            android:background="#ffffff"
+            android:layout_weight="6" >
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+  				<!-- 九宫格第一行 -->  
+  				<LinearLayout 
+  				    android:layout_width="fill_parent"
+  				    android:layout_height="fill_parent"
+  				    android:layout_weight="1">
+  				<LinearLayout 
+  	    			android:layout_width="fill_parent"
+  	    			android:layout_height="fill_parent"
+  	    			android:orientation="horizontal" 
+  	    			android:weightSum="4">
+  	    			<LinearLayout 
+  	        			android:layout_width="0.0dp"
+  	        			android:layout_height="fill_parent"
+  	        			android:layout_weight="1">
+  	        			<ImageView  
+            			android:id="@+id/imageView1"  
+            			android:layout_width="fill_parent"  
+            			android:layout_height="fill_parent"  
+            			android:layout_gravity="center"    
+            			android:src="@drawable/a1_bianmin" /> 
+  	    			</LinearLayout>
+  	    			<LinearLayout 
+  	        			android:layout_width="0.0dp"
+  	        			android:layout_height="fill_parent"
+  	        			android:layout_weight="1">
+  	        			<ImageView  
+            			android:id="@+id/imageView1"  
+            			android:layout_width="fill_parent"  
+            			android:layout_height="fill_parent"  
+            			android:layout_gravity="center"    
+            			android:src="@drawable/a1_xinwen" /> 
+  	    			</LinearLayout>
+  	    			<LinearLayout 
+  	        			android:layout_width="0.0dp"
+  	        			android:layout_height="fill_parent"
+  	        			android:layout_weight="1">
+  	        			<ImageView  
+            				android:id="@+id/imageView1"  
+            				android:layout_width="fill_parent"  
+            				android:layout_height="fill_parent"  
+            				android:layout_gravity="center"    
+            				android:src="@drawable/a1_shangjia" /> 
+  	    			</LinearLayout>
+  	    				<LinearLayout 
+  	        				android:layout_width="0.0dp"
+  	        				android:layout_height="fill_parent"
+  	        				android:layout_weight="1">
+  	        			<ImageView  
+            				android:id="@+id/imageView1"  
+            				android:layout_width="fill_parent"  
+            				android:layout_height="fill_parent"  
+            				android:layout_gravity="center"    
+            				android:src="@drawable/a1_huodong" /> 
+  	    			</LinearLayout>
+  				</LinearLayout>
+  				</LinearLayout>
+  				
+  				 <!-- 九宫格第2行 -->  
+  				<LinearLayout 
+  				    android:layout_width="fill_parent"
+  				    android:layout_height="fill_parent"
+  				    android:layout_weight="1">
+  				<LinearLayout 
+  	    			android:layout_width="fill_parent"
+  	    			android:layout_height="fill_parent"
+  	    			android:orientation="horizontal" 
+  	    			android:weightSum="4">
+  	    			<LinearLayout 
+  	        			android:layout_width="0.0dp"
+  	        			android:layout_height="fill_parent"
+  	        			android:layout_weight="1">
+  	        			<ImageView  
+            			android:id="@+id/imageView1"  
+            			android:layout_width="fill_parent"  
+            			android:layout_height="fill_parent"  
+            			android:layout_gravity="center"    
+            			android:src="@drawable/a1_hunlian" /> 
+  	    			</LinearLayout>
+  	    			<LinearLayout 
+  	        			android:layout_width="0.0dp"
+  	        			android:layout_height="fill_parent"
+  	        			android:layout_weight="1">
+  	        			<ImageView  
+            			android:id="@+id/imageView1"  
+            			android:layout_width="fill_parent"  
+            			android:layout_height="fill_parent"  
+            			android:layout_gravity="center"    
+            			android:src="@drawable/a1_zhaopin" /> 
+  	    			</LinearLayout>
+  	    			<LinearLayout 
+  	        			android:layout_width="0.0dp"
+  	        			android:layout_height="fill_parent"
+  	        			android:layout_weight="1">
+  	        			<ImageView  
+            				android:id="@+id/imageView1"  
+            				android:layout_width="fill_parent"  
+            				android:layout_height="fill_parent"  
+            				android:layout_gravity="center"    
+            				android:src="@drawable/a1_fangchan" /> 
+  	    			</LinearLayout>
+  	    				<LinearLayout 
+  	        				android:layout_width="0.0dp"
+  	        				android:layout_height="fill_parent"
+  	        				android:layout_weight="1">
+  	        			<ImageView  
+            				android:id="@+id/imageView1"  
+            				android:layout_width="fill_parent"  
+            				android:layout_height="fill_parent"  
+            				android:layout_gravity="center"    
+            				android:src="@drawable/a1_waimai" /> 
+  	    			</LinearLayout>
+  				</LinearLayout>
+  				</LinearLayout>
+  				<!-- 若有第三行，从此处开始写 -->
+  			</LinearLayout>
+        </LinearLayout>
+        
+        <!--  家在临沂上线了行 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dp"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_weight="2.5" >
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="#EEEEEE">
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center">
+  				<ImageView 
+  				    android:layout_width="wrap_content"
+  				    android:layout_height="fill_parent"
+  				    android:src="@drawable/a1_laba"/>
+                <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:text="          家在临沂上线了！欢迎大家光顾！                         "/>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dp"
+            android:orientation="vertical"
+            android:layout_weight="1.5" >
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="#EEEEEE">
+            </LinearLayout>
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom">
+                <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="推荐商品"/>
+            </RelativeLayout>
+        </LinearLayout>
+        
+        <!-- 推荐商品 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="7" 
+            android:orientation="horizontal">
+            <ScrollView 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <RelativeLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dp"
+                    android:layout_weight="1">
+  					<LinearLayout 
+  					    android:layout_width="fill_parent"
+  					    android:layout_height="fill_parent"
+  					    android:orientation="horizontal"
+  					    android:weightSum="2">
+  					    <LinearLayout 
+  					        android:layout_width="fill_parent"
+  					        android:layout_height="fill_parent"
+  					        android:layout_weight="1">
+  	        			<ImageView 
+  	        			    android:layout_width="wrap_content"
+  	        			    android:layout_height="wrap_content"
+  	        			    android:src="@drawable/a1_shangpin1"/>
+  					    </LinearLayout>
+  					    <LinearLayout 
+  					        android:layout_width="fill_parent"
+  					        android:layout_height="fill_parent"
+  					        android:layout_weight="1">
+  	        			<ImageView 
+  	        			    android:layout_width="wrap_content"
+  	        			    android:layout_height="wrap_content"
+  	        			    android:src="@drawable/a1_shangpin2"/>
+  					    </LinearLayout>
+  					</LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dp"
+                    android:layout_weight="1">
+                    <LinearLayout 
+  					    android:layout_width="fill_parent"
+  					    android:layout_height="fill_parent"
+  					    android:orientation="horizontal"
+  					    android:weightSum="2">
+  					    <LinearLayout 
+  					        android:layout_width="fill_parent"
+  					        android:layout_height="fill_parent"
+  					        android:layout_weight="1">
+  	        			<ImageView 
+  	        			    android:layout_width="wrap_content"
+  	        			    android:layout_height="wrap_content"
+  	        			    android:src="@drawable/a1_shangpin3"/>
+  					    </LinearLayout>
+  					    <LinearLayout 
+  					        android:layout_width="fill_parent"
+  					        android:layout_height="fill_parent"
+  					        android:layout_weight="1">
+  	        			<ImageView 
+  	        			    android:layout_width="wrap_content"
+  	        			    android:layout_height="wrap_content"
+  	        			    android:src="@drawable/a1_shangpin4"/>
+  					    </LinearLayout>
+  					</LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dp"
+            android:background="#543543"
+            android:layout_weight="2" >
+        </LinearLayout>
+
+</LinearLayout>
