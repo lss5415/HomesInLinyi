@@ -34,7 +34,7 @@ public abstract class BaseActivity extends Activity implements OnClickListener{
 	 */
 	abstract void initData();
 
-	// 提取存在手机内的数据
+	// 提取存在手机内的数据、
 	protected String getSharedPreferenceValue(String key) {
 		SharedPreferences sp = getSharedPreferences("SETTING_INFO", 0);
 		return sp.getString(key, null);
